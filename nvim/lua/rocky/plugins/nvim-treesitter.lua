@@ -31,7 +31,6 @@ return {
           "yaml",
           "html",
           "css",
-          "prisma",
           "markdown",
           "markdown_inline",
           "svelte",
@@ -42,6 +41,8 @@ return {
           "dockerfile",
           "gitignore",
           "query",
+					"go",
+					"terraform"
         },
         incremental_selection = {
           enable = true,
