@@ -33,9 +33,6 @@ return {
         "tailwindcss",
         "svelte",
         "lua_ls",
-        "graphql",
-        "emmet_ls",
-        "prismals",
         "pyright",
       },
       -- auto-install configured servers (with lspconfig)
