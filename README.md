@@ -7,6 +7,8 @@ Feel free to make changes as you see fit.
 ## Setup and usage
 - Clone the code into w/e root folder you need your config to be in.
 - Rename the "rocky" bits to whatever you want.
+- May need to install Stylua through cargo or something to avoid errors.
+    - https://github.com/JohnnyMorganz/StyLua
 - Use `nvim .` in that directory to open up your netrw.
 - Lazy should take over and install everything you need.
 - Lsp items have yet to be tested by me thoroughly.
