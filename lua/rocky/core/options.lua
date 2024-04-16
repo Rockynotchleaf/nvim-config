@@ -13,7 +13,6 @@ opt.ignorecase = true -- ignore case when searching
 opt.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
 
 -- Appearence
-
 opt.termguicolors = true
 opt.background = "dark"
 

@@ -42,7 +42,8 @@ return {
           "gitignore",
           "query",
 					"go",
-					"terraform"
+					"terraform",
+					"c_sharp"
         },
         incremental_selection = {
           enable = true,

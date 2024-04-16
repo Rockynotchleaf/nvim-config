@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({ { import = "rocky.plugins" }, { import = "rocky.plugins.lsp" } }, {
   install = {
-    colorscheme = { "gruvbox" },
+    colorscheme = { "dracula" },
   },
   checker = {
     enabled = true,
