@@ -11,9 +11,9 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({ { import = "rocky.plugins" }, { import = "rocky.plugins.lsp" } }, {
+require("lazy").setup({ { import = "rocky.plugins" }, { import = "rocky.plugins.lsp" }, { import = "rocky.plugins.dap" } }, {
   install = {
-    colorscheme = { "dracula" },
+    colorscheme = { "catpucchin" },
   },
   checker = {
     enabled = true,

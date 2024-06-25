@@ -4,8 +4,8 @@ opt.relativenumber = true -- show relative line numbers (good for choosing how m
 opt.number = true -- shows absolure line numbers on cursor line
 
 -- Tabs and indentation
-opt.tabstop = 2
-opt.shiftwidth = 2
+opt.tabstop = 4
+opt.shiftwidth = 4
 opt.autoindent = true
 
 -- Search settings
