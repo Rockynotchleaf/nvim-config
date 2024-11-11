@@ -5,6 +5,7 @@ local keymap = vim.keymap
 
 keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = "Opens up explorer" })
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
+keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "Toggle sidebar" })
 
 vim.api.nvim_create_autocmd("QuitPre", {
   callback = function()

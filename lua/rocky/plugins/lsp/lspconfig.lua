@@ -57,6 +57,11 @@ return {
 
       opts.desc = "Restart LSP"
       keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary
+	  vim.api.nvim_create_autocmd("BufWritePost", {
+				callback = function()
+					vim.lsp.buf.format()
+				end
+			})
     end
 
     -- used to enable autocompletion (assign to every lsp server config)
@@ -83,7 +88,7 @@ return {
     })
 
     -- configure typescript server with plugin
-    lspconfig["tsserver"].setup({
+    lspconfig["ts_ls"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })
