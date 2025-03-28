@@ -8,7 +8,7 @@ return {
 		local mdap = require("mason-nvim-dap")
 
 		mdap.setup({
-			ensure_installed = {"python", "delve"},
+			ensure_installed = {"python", "delve", "netcoredbg"},
 			handlers = {},
 		})
 	end,
