@@ -38,7 +38,7 @@ return {
 		keymap.set(
 			"n",
 			"<leader>hp",
-			function() harpoon:list():next() end,
+			function() harpoon:list():prev() end,
 			{ desc = "Go to previous harpoon mark" }
 		)
 		keymap.set(

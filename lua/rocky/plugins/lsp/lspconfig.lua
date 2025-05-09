@@ -99,11 +99,6 @@ return {
 			on_attach = on_attach,
 		})
 
-		lspconfig["omnisharp"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
 		-- configure svelte server
 		lspconfig["svelte"].setup({
 			capabilities = capabilities,

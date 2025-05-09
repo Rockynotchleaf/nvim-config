@@ -23,19 +23,14 @@ return {
 				typescript = { "prettier" },
 				typescriptreact = { "prettier" },
 				json = { "prettier" },
-				yaml = { "prettier", "yamlfmt", "yamlfix" },
 			},
-			format_on_save = {
-				lsp_format = "fallback",
-				timeout_ms = 500,
-			}
 		})
 
 		vim.keymap.set({ "n", "v" }, "<leader>mp", function()
 			conform.format({
 				lsp_format = "fallback",
 				async = false,
-				timeout_ms = 500,
+				timeout_ms = 750,
 			})
 		end
 		)

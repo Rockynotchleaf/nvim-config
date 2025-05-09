@@ -18,3 +18,4 @@ opt.background = "dark"
 
 -- Swapfile
 opt.swapfile = false
+opt.clipboard = "unnamedplus"
