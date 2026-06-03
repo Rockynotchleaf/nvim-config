@@ -9,11 +9,14 @@ return {
 
 		-- import mason-lspconfig
 		local mason_lspconfig = require("mason-lspconfig")
-		vim.lsp.config("*", {
-			capabilities = vim.lsp.protocol.make_client_capabilities()
-		})
+
 		-- enable mason and configure icons
-		mason.setup()
+		mason.setup({
+			registries = {
+				"github:mason-org/mason-registry",
+        		"github:Crashdummyy/mason-registry",
+			},
+		})
 
 		mason_lspconfig.setup({
 			-- list of servers for mason to install
@@ -26,8 +29,9 @@ return {
 				"lua_ls",
 				"pyright",
 				"gopls",
+				"terraformls",
 			},
-			automatic_enable = true,
+			automatic_install = true,
 		})
 	end,
 }

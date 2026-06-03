@@ -9,6 +9,7 @@ return {
 
 		mdap.setup({
 			ensure_installed = {"python", "delve", "netcoredbg"},
+			automatic_installation = true,
 			handlers = {},
 		})
 	end,
